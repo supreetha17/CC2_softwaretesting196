@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: com.example.AppTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 65.491 s <<< FAILURE! - in com.example.AppTest
+Testcase1(com.example.AppTest)  Time elapsed: 1.668 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "sheet1" is null
+	at com.example.AppTest.Testcase1(AppTest.java:65)
+
+Testcase2(com.example.AppTest)  Time elapsed: 26.386 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="pdp-commerce-format pr-xxs pl-xxs   slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 113px; height: 49.5375px;">...</div> is not clickable at point (1028, 654). Other element would receive the click: <button id="onetrust-pc-btn-handler" class="cookie-setting-link">...</button>
+  (Session info: chrome=124.0.6367.63)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8ad7e176c09cc40d0bbf76fcc913e5d, clickElement {id=f.749B367FF817BC1D7AB2E0AC967F914A.d.B1DDBB960EF79B34987E7665A452C863.e.416}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\SUPREE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61556/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b8ad7e176c09cc40d0bbf76fcc913e5d)] -> xpath: //*[@id='otherAvailFormats']/div/div/div[3]]
+Session ID: b8ad7e176c09cc40d0bbf76fcc913e5d
+	at com.example.AppTest.Testcase2(AppTest.java:99)
+
+Testcase3(com.example.AppTest)  Time elapsed: 5.792 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="ft-icon " href="https://www.barnesandnoble.com/membership/" onclick="set_cookie('footicon_bnmembership_na_icon');">...</a> is not clickable at point (759, 641). Other element would receive the click: <div id="onetrust-policy-text">...</div>
+  (Session info: chrome=124.0.6367.63)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [028831e2bb3c7ece263b6854222c989c, clickElement {id=f.90A3D0ABC21AA5EA47D3CBCFABB8EAFD.d.04E8CCB146E2F21D90E2D79353D81D91.e.192}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\SUPREE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61688/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (028831e2bb3c7ece263b6854222c989c)] -> xpath: //*[@id="footer"]/div/dd/div/div/div[1]/div/a[5]]
+Session ID: 028831e2bb3c7ece263b6854222c989c
+	at com.example.AppTest.Testcase3(AppTest.java:113)
+
